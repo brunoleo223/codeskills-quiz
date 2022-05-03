@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-
+    
     <section id="hero">
         <img src="assets/img/wave_intro.png" class="wave_intro">
         <div class="container">
@@ -31,37 +31,248 @@
     
     <section id="aprender">
         <div class="container">
-            <div class="box">
-                <h2>Se você pudesse escolher uma dessas tecnologias para usar o resto da vida, qual seria?</h2>
-                <div class="lista">
-                    <div class="item">
-                        <input type="radio" value="Javascript" id="pergunta_1" name="pergunta_1">
-                        <label for="pergunta_1">Javascript</label>
-                    </div>
-                    <div class="item">
-                        <input type="radio" value="Javascript" id="pergunta_2" name="pergunta_1">
-                        <label for="pergunta_2">Python</label>
-                    </div>
-                    <div class="item">
-                        <input type="radio" value="Javascript" id="pergunta_3" name="pergunta_1">
-                        <label for="pergunta_3">HTML + CSS</label>
-                    </div>
-                    <div class="item">
-                        <input type="radio" value="Javascript" id="pergunta_4" name="pergunta_1">
-                        <label for="pergunta_4">Flutter</label>
-                    </div>
-                    <div class="item">
-                        <input type="radio" value="Javascript" id="pergunta_5" name="pergunta_1">
-                        <label for="pergunta_5">React JS</label>
-                    </div>
-                    <div class="item">
-                        <input type="radio" value="Javascript" id="pergunta_6" name="pergunta_1">
-                        <label for="pergunta_6">Wordpress</label>
+            
+            <div class="box" id="pergunta_1">
+                <div id="perguntasSlide" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Pergunta 1 -->
+                        <div class="carousel-item active">
+                            <h2>Se você pudesse escolher uma dessas tecnologias para usar o resto da vida, qual seria?</h2>
+                            <div class="lista">
+                                <div class="item">
+                                    <input type="radio" value="Javascript" id="r1_pergunta_1" name="pergunta_1">
+                                    <label for="r1_pergunta_1">Javascript</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Python" id="r2_pergunta_1" name="pergunta_1">
+                                    <label for="r2_pergunta_1">Python</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="HTML + CSS" id="r3_pergunta_1" name="pergunta_1">
+                                    <label for="r3_pergunta_1">HTML + CSS</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Flutter" id="r4_pergunta_1" name="pergunta_1">
+                                    <label for="r4_pergunta_1">Flutter</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="ReactJS" id="r5_pergunta_1" name="pergunta_1">
+                                    <label for="r5_pergunta_1">ReactJS</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Wordpress" id="r6_pergunta_1" name="pergunta_1">
+                                    <label for="r6_pergunta_1">Wordpress</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pergunta 2 -->
+                        <div class="carousel-item">
+                            <h2>Você prefere:</h2>
+                            <div class="lista">
+                                <div class="item">
+                                    <input type="radio" value="Front-end" id="r1_pergunta_2" name="pergunta_2">
+                                    <label for="r1_pergunta_2">Front-end</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Back-end" id="r2_pergunta_2" name="pergunta_2">
+                                    <label for="r2_pergunta_2">Back-end</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Back-end" id="r3_pergunta_2" name="pergunta_2">
+                                    <label for="r3_pergunta_2">Devops</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Os dois" id="r4_pergunta_2" name="pergunta_2">
+                                    <label for="r4_pergunta_2">Os dois</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Não sei a diferença" id="r5_pergunta_2" name="pergunta_2">
+                                    <label for="r5_pergunta_2">Não sei a diferença</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pergunta 3 -->
+                        <div class="carousel-item">
+                            <h2>O que você faz com seu tempo livre?</h2>
+                            <div class="lista">
+                                <div class="item">
+                                    <input type="radio" value="Estudo" id="r1_pergunta_3" name="pergunta_3">
+                                    <label for="r1_pergunta_3">Estudo</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Trabalho mais" id="r2_pergunta_3" name="pergunta_3">
+                                    <label for="r2_pergunta_3">Trabalho mais</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Assisto qualquer coisa na internet" id="r3_pergunta_3" name="pergunta_3">
+                                    <label for="r3_pergunta_3">Assisto qualquer coisa na internet</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Tiktok e Instagram" id="r4_pergunta_3" name="pergunta_3">
+                                    <label for="r4_pergunta_3">Tiktok e Instagram</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Jogos" id="r5_pergunta_3" name="pergunta_3">
+                                    <label for="r5_pergunta_3">Jogos</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pergunta 4 -->
+                        <div class="carousel-item">
+                            <h2>Você prefere:</h2>
+                            <div class="lista">
+                                <div class="item">
+                                    <input type="radio" value="Programar ouvindo música" id="r1_pergunta_4" name="pergunta_4">
+                                    <label for="r1_pergunta_4">Programar ouvindo música</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Programar de madrugada " id="r2_pergunta_4" name="pergunta_4">
+                                    <label for="r2_pergunta_4">Programar de madrugada </label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Testar tudo e ter certeza que está tudo bem" id="r3_pergunta_4" name="pergunta_4">
+                                    <label for="r3_pergunta_4">Testar tudo e ter certeza que está tudo bem</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Criar algo novo mesmo sem saber se vai funcionar" id="r4_pergunta_4" name="pergunta_4">
+                                    <label for="r4_pergunta_4">Criar algo novo mesmo sem saber se vai funcionar</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Um desafio novo sempre que possível" id="r5_pergunta_4" name="pergunta_4">
+                                    <label for="r5_pergunta_4">Um desafio novo sempre que possível</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pergunta 5 -->
+                        <div class="carousel-item">
+                            <h2>Qual desses projetos você gostaria de ter programado?</h2>
+                            <div class="lista">
+                                <div class="item">
+                                    <input type="radio" value="Uber" id="r1_pergunta_5" name="pergunta_5">
+                                    <label for="r1_pergunta_5">Uber</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Netflix" id="r2_pergunta_5" name="pergunta_5">
+                                    <label for="r2_pergunta_5">Netflix</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Spotify" id="r3_pergunta_5" name="pergunta_5">
+                                    <label for="r3_pergunta_5">Spotify</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Tiktok" id="r4_pergunta_5" name="pergunta_5">
+                                    <label for="r4_pergunta_5">Tiktok</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Nubank" id="r5_pergunta_5" name="pergunta_5">
+                                    <label for="r5_pergunta_5">Nubank</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pergunta 6 -->
+                        <div class="carousel-item">
+                            <h2>Quem te representa mais?</h2>
+                            <div class="lista">
+                                <div class="item">
+                                    <input type="radio" value="Homer Simpson" id="r1_pergunta_6" name="pergunta_6">
+                                    <label for="r1_pergunta_6">Homer Simpson</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Mestre Yoda" id="r2_pergunta_6" name="pergunta_6">
+                                    <label for="r2_pergunta_6">Mestre Yoda</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Coringa" id="r3_pergunta_6" name="pergunta_6">
+                                    <label for="r3_pergunta_6">Coringa</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Zukemberg" id="r4_pergunta_6" name="pergunta_6">
+                                    <label for="r4_pergunta_6">Zukemberg</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Elon Musk" id="r5_pergunta_6" name="pergunta_6">
+                                    <label for="r5_pergunta_6">Elon Musk</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Steve Jobs" id="r6_pergunta_6" name="pergunta_6">
+                                    <label for="r6_pergunta_6">Steve Jobs</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Resultado -->
+                        <div class="carousel-item">
+                            <h2>RESULTADO</h2>
+                            <div class="lista">
+                                <div class="item">
+                                    <input type="radio" value="Homer Simpson" id="r1_pergunta_6" name="pergunta_6">
+                                    <label for="r1_pergunta_6">Homer Simpson</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Mestre Yoda" id="r2_pergunta_6" name="pergunta_6">
+                                    <label for="r2_pergunta_6">Mestre Yoda</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Coringa" id="r3_pergunta_6" name="pergunta_6">
+                                    <label for="r3_pergunta_6">Coringa</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Zukemberg" id="r4_pergunta_6" name="pergunta_6">
+                                    <label for="r4_pergunta_6">Zukemberg</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Elon Musk" id="r5_pergunta_6" name="pergunta_6">
+                                    <label for="r5_pergunta_6">Elon Musk</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Steve Jobs" id="r6_pergunta_6" name="pergunta_6">
+                                    <label for="r6_pergunta_6">Steve Jobs</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Captura de Lead -->
+                        <div class="carousel-item">
+                            <h2>Lead</h2>
+                            <div class="lista">
+                                <div class="item">
+                                    <input type="radio" value="Homer Simpson" id="r1_pergunta_6" name="pergunta_6">
+                                    <label for="r1_pergunta_6">Homer Simpson</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Mestre Yoda" id="r2_pergunta_6" name="pergunta_6">
+                                    <label for="r2_pergunta_6">Mestre Yoda</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Coringa" id="r3_pergunta_6" name="pergunta_6">
+                                    <label for="r3_pergunta_6">Coringa</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Zukemberg" id="r4_pergunta_6" name="pergunta_6">
+                                    <label for="r4_pergunta_6">Zukemberg</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Elon Musk" id="r5_pergunta_6" name="pergunta_6">
+                                    <label for="r5_pergunta_6">Elon Musk</label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" value="Steve Jobs" id="r6_pergunta_6" name="pergunta_6">
+                                    <label for="r6_pergunta_6">Steve Jobs</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <div class="borda"></div>
+            <div class="borda">
+                <div class="load"></div>
+            </div>
         </div>
     </section>
     
@@ -70,6 +281,7 @@
         Code Skills 2022<br>Todos os direitos reservados
     </footer>
     
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

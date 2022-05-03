@@ -3,15 +3,19 @@
         padding: 4rem 2rem;
         border: 1px solid $azul;
         border-bottom: 0;
-        position: relative;
         background-image: url('../img/bg_aprender.png');
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: top;
+
+        &.active{
+            display: block;
+        }
         
         h2{
             text-align: center;
             font-size: 2.5rem;
+            height: 3.5rem;
         }
         
         .lista{
@@ -32,25 +36,38 @@
                     text-align: center;
                     height: 130px;
                     border-radius: 5px;
+                    position: relative;
                     cursor: pointer;
                     transition: all .2s;
-                    background: linear-gradient(90deg, rgba($azul-light,0) 35%, rgba($laranja,0) 100%);
                     &:hover{
                         border-bottom-color: $laranja;
                     }
+                    &::after{
+                        content: '';
+                        width: 0%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background: linear-gradient(90deg, rgba($azul-light,1) 35%, rgba($laranja,1) 100%);
+                        position: absolute;
+                        z-index: -1;
+                        opacity: 1;
+                        transition: all .4s;
+                    }
                 }
-                
-                
-                
                 
                 input{
                     position: absolute;
                     left: -5000px;
 
                     &:checked+label{ 
-                        background: linear-gradient(90deg, rgba($azul-light,1) 35%, rgba($laranja,1) 100%);
                         border: 0;
                         font-weight: bold;
+
+                        &::after{
+                            width: 100%;
+                            opacity: 1;
+                        }
                      } 
                 }
             }
@@ -61,6 +78,16 @@
         height:1rem;
         background: linear-gradient(90deg, rgba($azul-light,1) 35%, rgba($laranja,1) 100%);
         border: 0;
+        position: relative;
+
+        .load{
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            background-color: #0c0e12;
+            width: 100%;
+        }
     }
 }
 
