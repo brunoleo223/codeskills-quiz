@@ -1,8 +1,10 @@
 /*
 
-- Passar perguntas
-- Registrar valores clicados 
-- Atualizar borda
+    - Passar perguntas
+    - Registrar valores clicados 
+    - Atualizar borda
+    - Capturar lead
+    - Salvar lead
 
 */
 
@@ -23,7 +25,8 @@ options.forEach(item => {
         setTimeout(() => {
 
             // Next slide
-            carousel.next()
+            if(!(currentSlide == questions.length-2))
+                carousel.next()
 
             // Update borda
             updateBorda()
@@ -40,6 +43,5 @@ perguntasSlide.addEventListener('slide.bs.carousel', function (e) {
 
 function updateBorda(){
     const borda = document.querySelector('.borda .load');
-    
-    borda.style.width = `${100 - ((currentSlide * 100 / questions.length) + (100 / questions.length))}%`;
+    borda.className = `load load-${Math.round(((currentSlide * 100 / questions.length) + (100 / questions.length)))}`;
 }

@@ -87,9 +87,19 @@
             height: 100%;
             background-color: #0c0e12;
             width: 100%;
+
+        }
+        @for $i from 1 through 100 {
+            .load-#{$i}{
+                width: 100% - $i;
+                transition: all .2s;
+            }
         }
     }
 }
+
+
+
 
 @media (max-width: 1024px){
     #aprender{
@@ -109,3 +119,4 @@
         }
     }   
 }
+
