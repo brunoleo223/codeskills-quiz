@@ -1,0 +1,109 @@
+.cta_compra{
+    .container{
+        .box{
+            background-color: $bg;
+            border: 1px solid $azul;
+            display: flex;
+            align-items: center;
+            padding: 1.3rem;
+            justify-content: space-around;
+            
+            .selo{
+                img{
+                    max-width: 170px;
+                }
+            }
+            
+            .preco{
+                font-size: 1.57rem;
+                font-weight: bold;
+                
+                strike{
+                    text-decoration-color: $laranja;
+                }
+                
+                & > div {
+                    font-size: 10rem;
+                    margin-top: -3rem;
+                    margin-bottom: -3rem;
+                    sup{
+                        font-size: 3rem;
+                        top: -5rem;
+                    }
+                }
+            }
+            
+            .compra{
+                max-width: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: rgba(255, 255, 255, 0.5);
+                gap: 1rem;
+                .btn{
+                    color: #fff;
+                    transform: scale(1.3)
+                }
+                img{
+                    opacity: 0.4;
+                }
+            }
+        }
+    }
+    .borda{
+        width:100%;
+        height:1rem;
+        background: linear-gradient(90deg, rgba($azul-light,1) 35%, rgba($laranja,1) 100%);
+        border: 0;
+    }
+}
+
+@media (max-width: 1024px){
+    .cta_compra{
+        .selo{
+            img{
+                max-width: 130px;
+            }
+        }
+        
+        .preco{
+            font-size: 1.36rem !important;
+            & > div{
+                font-size: 7rem !important;
+                margin-top: -2rem !important;
+                sup{
+                    font-size: 2rem !important;
+                    top: -4rem !important;
+                }
+            }
+        }
+        
+        .compra{
+            max-width: 250px;
+        }
+    }   
+}
+
+@media (max-width: 460px){
+    .cta_compra{
+        .box{
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 2rem;
+        }
+        .selo{
+            img{
+                max-width: 130px;
+            }
+        }
+        
+        .preco{
+            font-size: 1.1rem !important;
+            text-align: center;
+        }
+        
+        .compra{
+            margin-top: 2rem;
+        }
+    }   
+}

@@ -1,0 +1,43 @@
+#professor{
+    padding-top: 5rem;
+    h2{
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .texto{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .bruno{
+        text-align: center;
+
+        img{
+            width:100px
+        }
+
+        h3{
+            margin: 1.5rem 0;
+        }
+
+        p{
+            padding:0 4.5rem;
+        }
+    }
+}
+
+@media (max-width:460px){
+    #professor{
+        h2{
+            font-size: 1.8rem;
+        }
+        .bruno{
+            p{
+                padding:0rem;
+            }
+        }
+    }
+}

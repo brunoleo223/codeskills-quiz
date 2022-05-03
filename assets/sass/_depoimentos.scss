@@ -1,0 +1,44 @@
+#depoimentos{
+    margin-top: 8rem;
+    position: relative;
+    .row{
+        --bs-gutter-x: 4rem;
+    }
+
+    .container{
+        z-index: 99 !important;
+    }
+
+    .wave{
+        position: absolute;
+        top: 100px;
+        left: -30%;
+        width: 100%;
+        opacity: .4;
+        z-index: 0 !important;
+    }
+
+    .depoimento{
+        background: linear-gradient(90deg, rgba($azul-light,1) 35%, rgba($laranja,1) 100%);
+        padding: 3rem;
+        position: relative;
+        font-size: 1.2rem;
+        margin-bottom: 5rem;
+        .aspas{
+            position:absolute;
+            top: -30px;
+            right: 30px;
+            width: 70px;
+            height: fit-content;
+        }
+        .info{
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+            img{
+                width: 80px;
+                margin-right: 1rem;
+            }
+        }
+    }
+}

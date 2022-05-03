@@ -1,0 +1,11 @@
+$bg: #0d1116;
+$azul: #151b27;
+$azul-light: #529bef;
+$laranja: #e87860;
+$primary: $laranja;
+$text-color: #fff;
+
+@import "geral";
+@import "hero";
+@import "aprender";
+@import "footer";

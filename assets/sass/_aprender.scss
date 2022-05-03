@@ -1,0 +1,84 @@
+#aprender{
+    .box{
+        padding: 4rem 2rem;
+        border: 1px solid $azul;
+        border-bottom: 0;
+        position: relative;
+        background-image: url('../img/bg_aprender.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+        
+        h2{
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        
+        .lista{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-top: 5rem;
+            padding: 0 100px;
+            .item{
+                label{
+                    display: flex;
+                    align-items:center;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 10px;
+                    border: 1px solid rgba(255, 255, 255, 0.216);
+                    font-size: 1.3rem;
+                    text-align: center;
+                    height: 130px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: all .2s;
+                    background: linear-gradient(90deg, rgba($azul-light,0) 35%, rgba($laranja,0) 100%);
+                    &:hover{
+                        border-bottom-color: $laranja;
+                    }
+                }
+                
+                
+                
+                
+                input{
+                    position: absolute;
+                    left: -5000px;
+
+                    &:checked+label{ 
+                        background: linear-gradient(90deg, rgba($azul-light,1) 35%, rgba($laranja,1) 100%);
+                        border: 0;
+                        font-weight: bold;
+                     } 
+                }
+            }
+        }
+    }
+    .borda{
+        width:100%;
+        height:1rem;
+        background: linear-gradient(90deg, rgba($azul-light,1) 35%, rgba($laranja,1) 100%);
+        border: 0;
+    }
+}
+
+@media (max-width: 1024px){
+    #aprender{
+        .lista{
+            grid-template-columns: 1fr 1fr !important;
+        }
+    }   
+}
+
+@media (max-width: 460px){
+    #aprender{
+        h2{
+            font-size: 1.8rem !important;
+        }
+        .lista{
+            grid-template-columns: 1fr !important;
+        }
+    }   
+}
