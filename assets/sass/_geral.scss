@@ -65,3 +65,7 @@ section, .cta_compra{
         max-width: 900px;
     }
 }
+
+:target{
+    scroll-margin-top: 100px;
+}

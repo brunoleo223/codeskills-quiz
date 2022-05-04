@@ -1,10 +1,11 @@
 /*
 
-    - Passar perguntas
+    - ✅ Passar perguntas
     - Registrar valores clicados 
-    - Atualizar borda
+    - ✅ Atualizar borda
     - Capturar lead
     - Salvar lead
+    - Calcular e exibir resultado
 
 */
 
@@ -19,14 +20,18 @@ const questions = document.querySelectorAll('.carousel-item');
 const options = document.querySelectorAll('.carousel-item .item');
 
 
+// Update the current slide
+perguntasSlide.addEventListener('slide.bs.carousel', function (e) {
+    currentSlide = e.from
+})
+
 // When click in a option, go to the next slide
 options.forEach(item => {
     item.addEventListener('click', e => {
         setTimeout(() => {
 
             // Next slide
-            if(!(currentSlide == questions.length-2))
-                carousel.next()
+            carousel.next()
 
             // Update borda
             updateBorda()
@@ -36,12 +41,18 @@ options.forEach(item => {
     })
 })
 
-// Update the current slide
-perguntasSlide.addEventListener('slide.bs.carousel', function (e) {
-    currentSlide = e.from
-})
-
+// Update borda
 function updateBorda(){
     const borda = document.querySelector('.borda .load');
     borda.className = `load load-${Math.round(((currentSlide * 100 / questions.length) + (100 / questions.length)))}`;
+}
+
+function exibeResultado(){
+    const loading = document.querySelector('.res .loading');
+    loading.classList.remove('not-show')
+
+    setTimeout(()=>{
+        carousel.next()
+        alert(3)
+    }, 800)
 }

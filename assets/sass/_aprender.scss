@@ -1,12 +1,16 @@
 #aprender{
     .box{
-        padding: 4rem 2rem;
+        
         border: 1px solid $azul;
         border-bottom: 0;
         background-image: url('../img/bg_aprender.png');
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: top;
+
+        .carousel-item{
+            padding: 4rem 2rem;
+        }
         
         &.active{
             display: block;
@@ -92,7 +96,33 @@
         @for $i from 1 through 100 {
             .load-#{$i}{
                 width: 100% - $i;
-                transition: all .2s;
+                transition: all .4s;
+            }
+        }
+    }
+
+    .res{
+
+        .loading{
+            position: absolute;
+            background: rgba($color: #fff, $alpha: .01);
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9;
+            transition: all .2s;
+            background-image: url('../img/loading.gif');
+            background-position: center;
+            background-size: 100px;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+
+            &.not-show{
+                width: 0;
+                height: 0;
             }
         }
     }
@@ -100,6 +130,9 @@
     .resultado{
         display: flex;
         gap: 50px;
+        position: relative;
+
+        
         
         
         .conteudo{
@@ -161,6 +194,14 @@
     #aprender{
         h2{
             font-size: 1.8rem !important;
+        }
+
+        .resultado{
+            flex-direction: column;
+            .promo{
+                width: 100%;
+                height: 600px;
+            }
         }
         
         .borda{
