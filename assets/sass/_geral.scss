@@ -69,3 +69,37 @@ section, .cta_compra{
 :target{
     scroll-margin-top: 100px;
 }
+
+
+.modal-header, .modal-content{
+    background-color: transparent !important;
+    border: 0 !important;
+
+    .btn-close{
+        background: transparent url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>");
+        padding: .2rem .2rem;
+    }
+
+    h2{
+        font-size: 4rem;
+    }
+} 
+
+.modal-body{
+    border-bottom: 0;
+    background-image: url('../img/bg_aprender.png');
+    background-color: $bg;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.modal-backdrop{
+    background-color: rgba(#000, .2);
+    backdrop-filter: blur(10px);
+    &.show{
+        opacity: 1 !important;
+    }
+}
