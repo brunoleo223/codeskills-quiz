@@ -22,32 +22,38 @@ const results = [
     {
         "id": "r1_pergunta_4",
         "title": "O Criativo",
-        "description": "1Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-        "img": "assets/img/r1.jpeg"
+        "description": "Você gosta do seu espaço",
+        "img": "assets/img/r1.png"
     },
     {   
         "id": "r2_pergunta_4",
         "title": "O que vira a noite",
-        "description": "2Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-        "img": "assets/img/r2.jpeg"
+        "description": "Se você pudesse estaria sempre dormingo de dia e trabalhando a noite. Você curte trabalhar em silêncio e sem ser interrompido por outras pessoas. A noite é quando seu cérebro disperta e você consegue elevar sua produtividade!",
+        "img": "assets/img/r2.png"
     },
     {   
         "id": "r3_pergunta_4",
         "title": "O Risco zero",
-        "description": "3Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-        "img": "assets/img/r3.jpeg"
+        "description": "Você tenta a todo momento ter certeza de que tudo está funcionando como deveria. Seu pior pesadelo é que o alguém mexer no sistema e ele parar de funcionar. Melhor garantir do que passar o fim de semana resolvendo.",
+        "img": "assets/img/r3.png"
     },
     {   
         "id": "r4_pergunta_4",
         "title": "O que quebra a produção",
-        "description": "4Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-        "img": "assets/img/r4.jpeg"
+        "description": "Você gosta de um desafio, mas nem sempre lembra de testar o suficiente. A essa altura você já quebrou o sistema ou site em produção pelo menos uma vez, mas isso não significa que você não saiba o que está fazendo.",
+        "img": "assets/img/r4.png"
     },
     {   
         "id": "r5_pergunta_4",
         "title": "O canivete Suíço",
-        "description": "5Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-        "img": "assets/img/r5.jpeg"
+        "description": "Você é dev para todo código. Se precisam resolver algo, você está lá. Se precisam de algo simples ou completo, é você mesmo que chamam!",
+        "img": "assets/img/r5.png"
+    },,
+    {   
+        "id": "r6_pergunta_4",
+        "title": "O Expert",
+        "description": "Focê tem bem claro o quer quer para sua carreira como dev. Seu objetivo é se aprofundar e especializar o máximo que for possível, sem tempo para investir naquilo que não faz sentido para você.",
+        "img": "assets/img/r6.png"
     },
 ]
 
