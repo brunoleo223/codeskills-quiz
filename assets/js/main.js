@@ -1,7 +1,7 @@
 /*
 
 - ✅ Passar perguntas
-- Registrar valores clicados 
+- ✅ Registrar valores clicados 
 - ✅ Atualizar borda
 - Capturar lead
 - Salvar lead
@@ -15,6 +15,7 @@ const carousel = new bootstrap.Carousel(perguntasSlide, {
     keyboard: true
 })
 let currentSlide = 0;
+let controll = -1;
 const answers = [];
 const questions = document.querySelectorAll('.carousel-item');
 const options = document.querySelectorAll('.carousel-item .item');
@@ -66,6 +67,11 @@ perguntasSlide.addEventListener('slide.bs.carousel', function (e) {
 // When click in a option, go to the next slide
 options.forEach(item => {
     item.addEventListener('click', e => {
+        controll++;
+        if(controll % 2 !== 0){
+            return;
+        }
+
         setTimeout(() => {
             
             // Next slide
@@ -77,10 +83,11 @@ options.forEach(item => {
             // Update Result
             if(item.classList.contains('decision')){
                 const data = results.find(result => result.id === item.getElementsByTagName('input')[0].getAttribute('id'))
-                updateResultData(data)
+                updateResultData(data);
             }
             
             // Save answer
+            answers.push(item.getElementsByTagName('input')[0].getAttribute('value'))
         }, 500)
     })
 })
@@ -109,6 +116,11 @@ function updateResultData(data){
     title.textContent = data.title;
     description.textContent = data.description;
     img.setAttribute('src', data.img);
+}
+
+function setResult(){
+    const user_answers = document.querySelector('input#user_answers');
+    user_answers.setAttribute('value', answers);
 }
 
 

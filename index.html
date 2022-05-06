@@ -219,7 +219,7 @@
                                         <img src="./assets/img/gift.gif" alt="">
                                         <h3>Preparamos uma lista de materiais e ferramentas para você dar o próximo passo na sua carreira!</h3>
                                         <div class="botoes">
-                                            <a data-bs-toggle="modal" data-bs-target="#modalForm" class="btn btn-primary mt-4">ABRIR PRESENTE</a>
+                                            <a data-bs-toggle="modal" data-bs-target="#modalForm" class="btn btn-primary mt-4" onclick="setResult()">ABRIR PRESENTE</a>
                                         </div>
                                     </div>
                                 </div>
@@ -274,6 +274,8 @@
                                 </div>
                             </div>
                         </div>
+                        <input type="hidden" name="quiz_answers" id="user_answers" value="">
+                        <input type="hidden" name="origem" value="quiz-descubra-que-tipo-de-dev-voce-e">
                         <div class="col-12 mt-4">
                             <button class="btn btn-primary" type="submit">
                                 Pronto!
