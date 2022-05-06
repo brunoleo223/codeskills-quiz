@@ -3,8 +3,8 @@
 - ✅ Passar perguntas
 - ✅ Registrar valores clicados 
 - ✅ Atualizar borda
-- Capturar lead
-- Salvar lead
+- ✅ Capturar lead
+- ✅ Salvar lead
 - ✅ Calcular e exibir resultado
 
 */
@@ -23,13 +23,13 @@ const results = [
     {
         "id": "r1_pergunta_4",
         "title": "O Criativo",
-        "description": "Sua marca registrada é descobrir novos jeitos de fazer a mesma coisa. Voce curte trabalhar de qualquer lugar, sozinho ou de galera. Você tem uma ideia nova a cada minuto e de vez em quando vocë ate se perde nelas.",
+        "description": "Sua marca registrada é descobrir novos jeitos de fazer a mesma coisa. Você curte trabalhar de qualquer lugar, sozinho ou de galera. Você tem uma ideia nova a cada minuto e de vez em quando você ate se perde nelas.",
         "img": "assets/img/r1.png"
     },
     {   
         "id": "r2_pergunta_4",
         "title": "O que vira a noite",
-        "description": "Se você pudesse estaria sempre dormindo de dia e trabalhando a noite. Você curte trabalhar em silêncio e sem ser interrompido por outras pessoas. A noite é quando seu cérebro disperta e você consegue elevar sua produtividade!",
+        "description": "Se você pudesse estaria sempre dormindo de dia e trabalhando a noite. Você curte trabalhar em silêncio e sem ser interrompido por outras pessoas. A noite é quando seu cérebro desperta e você consegue elevar sua produtividade!",
         "img": "assets/img/r2.png"
     },
     {   
