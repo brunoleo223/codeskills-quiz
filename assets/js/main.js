@@ -23,13 +23,13 @@ const results = [
     {
         "id": "r1_pergunta_4",
         "title": "O Criativo",
-        "description": "Você gosta do seu espaço",
+        "description": "Sua marca registrada é descobrir novos jeitos de fazer a mesma coisa. Voce curte trabalhar de qualquer lugar, sozinho ou de galera. Você tem uma ideia nova a cada minuto e de vez em quando vocë ate se perde nelas.",
         "img": "assets/img/r1.png"
     },
     {   
         "id": "r2_pergunta_4",
         "title": "O que vira a noite",
-        "description": "Se você pudesse estaria sempre dormingo de dia e trabalhando a noite. Você curte trabalhar em silêncio e sem ser interrompido por outras pessoas. A noite é quando seu cérebro disperta e você consegue elevar sua produtividade!",
+        "description": "Se você pudesse estaria sempre dormindo de dia e trabalhando a noite. Você curte trabalhar em silêncio e sem ser interrompido por outras pessoas. A noite é quando seu cérebro disperta e você consegue elevar sua produtividade!",
         "img": "assets/img/r2.png"
     },
     {   
@@ -53,7 +53,7 @@ const results = [
     {   
         "id": "r6_pergunta_4",
         "title": "O Expert",
-        "description": "Focê tem bem claro o quer quer para sua carreira como dev. Seu objetivo é se aprofundar e especializar o máximo que for possível, sem tempo para investir naquilo que não faz sentido para você.",
+        "description": "Você tem bem claro o quer quer para sua carreira como dev. Seu objetivo é se aprofundar e especializar o máximo que for possível, sem tempo para investir naquilo que não faz sentido para você.",
         "img": "assets/img/r6.png"
     },
 ]
