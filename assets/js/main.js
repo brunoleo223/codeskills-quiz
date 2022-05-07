@@ -88,6 +88,11 @@ options.forEach(item => {
             
             // Save answer
             answers.push(item.getElementsByTagName('input')[0].getAttribute('value'))
+
+            // If result is showing
+            if(currentSlide == questions.length-2){
+                showPromoButton()
+            }
         }, 500)
     })
 })
@@ -112,15 +117,24 @@ function updateResultData(data){
     const title = document.querySelector('.resultado .conteudo h2');
     const description = document.querySelector('.resultado .conteudo p');
     const img = document.querySelector('.resultado .conteudo img');
+    const form = document.querySelector('.form-active');
     
     title.textContent = data.title;
     description.textContent = data.description;
     img.setAttribute('src', data.img);
+    form.setAttribute('src', 'form.html');
 }
 
 function setResult(){
     const user_answers = document.querySelector('input#user_answers');
     user_answers.setAttribute('value', answers);
+}
+
+function showPromoButton(){
+    const promoButton = document.querySelector('.promoButton');
+    setTimeout(() => {
+        promoButton.classList.remove('no-show')
+    }, 500)
 }
 
 

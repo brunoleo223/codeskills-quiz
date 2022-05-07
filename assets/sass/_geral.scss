@@ -67,7 +67,7 @@ section, .cta_compra{
 }
 
 :target{
-    scroll-margin-top: 100px;
+    scroll-margin-top: 50px;
 }
 
 
@@ -102,5 +102,26 @@ section, .cta_compra{
     backdrop-filter: blur(10px);
     &.show{
         opacity: 1 !important;
+    }
+}
+
+.promoButton{
+    display: none !important;
+}
+
+@media (max-width: 576px){
+    .promoButton{
+        display: initial !important;
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9999999999;
+        width: 90% !important;
+        transition: all .2s;
+
+        &.no-show{
+            bottom: -100px;
+        }
     }
 }
